@@ -29,25 +29,7 @@ The ESP32 remains in **Deep Sleep mode** ($I_{sleep} \approx 10\mu\text{A}-150\m
 * **Actuator:** 12V Solenoid Door Lock via Optocoupler/Relay or N-Channel MOSFET
 * **Indicators:** 5V Active Buzzer, Green and Red LEDs
 
-### System Block Diagram
 
-The system's operational flow from detection to authentication is outlined below:
-
-```markdown
-### System Block Diagram
-![System Block Diagram](images/block_diagram.png)
-
-```
-
-### Circuit Schematics
-
-The hardware connections, emphasizing the SPI communication lines for the RFID reader and the RTC-capable GPIO pin for the PIR interrupt, are detailed below:
-
-```markdown
-### Circuit Schematics
-![Circuit Schematic](images/schematic.png)
-
-```
 
 ---
 
