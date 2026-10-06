@@ -6,7 +6,7 @@
 
 This project is an energy-efficient, localized security access control system built on the ESP32 microcontroller. To minimize power consumption in remote or battery-powered deployments, the system utilizes a Passive Infrared (PIR) motion sensor as a hardware interrupt.
 
-The ESP32 remains in **Deep Sleep mode** ($I_{sleep} \approx 10\mu\text{A}-150\mu\text{A}$) until motion is detected. Upon waking, it energizes the RC522 RFID module, processes the security credentials, operates a locking mechanism, and immediately returns to deep sleep, significantly extending battery operational life.
+The ESP32 remains in **Deep Sleep mode**  until motion is detected. Upon waking, it energizes the RC522 RFID module, processes the security credentials, operates a locking mechanism, and immediately returns to deep sleep, significantly extending battery operational life.
 
 ---
 
@@ -14,7 +14,7 @@ The ESP32 remains in **Deep Sleep mode** ($I_{sleep} \approx 10\mu\text{A}-150\m
 
 * **PIR Hardware Interrupt:** The PIR sensor acts as an external wake-up trigger connected to a designated RTC GPIO pin, keeping the ESP32 in deep sleep until a human approaches.
 * **Low-Power State Management:** The RC522 RFID reader is explicitly powered down or kept un-energized during sleep states to prevent idle current draw.
-* **Rapid Authentication:** Optimized setup routines ensure credential validation and peripheral triggering happen in under 2 seconds upon wake-up.
+* **Rapid Authentication:** Optimized setup routines ensure credential validation and peripheral triggering happen in  a very short time upon wake-up.
 * **Local Access Control:** Hardware-level security checks without dependency on cloud latency.
 
 ---
