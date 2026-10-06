@@ -1,6 +1,6 @@
 
 
-# ESP32 RFID Access Control System with PIR Wake-Up
+# INAFE RECOGNITION AND RFID ACCESS CONTROL SYSTEM 
 
 ## Project Overview
 
